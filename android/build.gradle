@@ -9,11 +9,17 @@ def computeVersionName() {
 
 buildscript {
     repositories {
+        maven {
+            url "https://maven.google.com"
+            name 'Maven'
+        }
+        google()
         jcenter()
+        mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.+'
+        classpath 'com.android.tools.build:gradle:2.3.+'
     }
 }
 
